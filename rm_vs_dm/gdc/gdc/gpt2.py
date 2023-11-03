@@ -108,7 +108,7 @@ class GPT2HeadWithValueModel(GPT2PreTrainedModel):
 
         transformer_outputs = self.transformer(
             input_ids,
-            past=past,
+            past_key_values=past,
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
             position_ids=position_ids,
